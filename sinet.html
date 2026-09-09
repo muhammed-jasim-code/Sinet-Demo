@@ -1,0 +1,1341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #jasim:nth-child(odd){
+            background-color: rgb(210, 252, 252) ;
+        }
+
+
+        <style>
+
+/* =====================================================
+   RESPONSIVE CSS
+   Breakpoints:
+   none : <576px
+   sm   : 576px
+   md   : 768px
+   lg   : 992px
+   xl   : 1200px
+   xxl  : 1400px
+   ===================================================== */
+
+
+/* =========================
+   COMMON
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+img,
+image {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   NONE - MOBILE
+   < 576px
+   ========================= */
+
+@media (max-width: 575.98px) {
+
+    /* HEADER */
+
+    body > div > div:first-of-type {
+        position: relative !important;
+        height: auto !important;
+        min-height: 80px !important;
+        padding: 10px !important;
+    }
+
+    body > div > div:first-of-type ul {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: space-between !important;
+        flex-wrap: wrap !important;
+        gap: 8px !important;
+    }
+
+    body > div > div:first-of-type li {
+        float: none !important;
+        margin: 0 !important;
+        font-size: 90% !important;
+        padding: 10px !important;
+    }
+
+    body > div > div:first-of-type li:first-child {
+        font-size: 150% !important;
+    }
+
+
+    /* REMOVE LARGE DESKTOP MARGINS */
+
+    div[style*="margin-left: 650px"],
+    div[style*="margin-left: 630px"],
+    div[style*="margin-left: 550px"],
+    div[style*="margin-left: 535px"],
+    div[style*="margin-left: 455px"],
+    div[style*="margin-left: 435px"],
+    div[style*="margin-left: 430px"],
+    div[style*="margin-left: 410px"],
+    div[style*="margin-left: 380px"],
+    div[style*="margin-left: 300px"],
+    div[style*="margin-left: 250px"],
+    div[style*="margin-left: 230px"],
+    div[style*="margin-left: 185px"],
+    div[style*="margin-left: 180px"],
+    div[style*="margin-left: 150px"],
+    div[style*="margin-left: 100px"],
+    div[style*="margin-left: 50px"],
+    div[style*="margin-left: 30px"],
+    div[style*="margin-left: 20px"] {
+        margin-left: 0 !important;
+    }
+
+
+    /* FLEX ITEMS */
+
+    div[style*="display: flex"] {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    div[style*="display: flex"] > div {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding: 10px !important;
+    }
+
+
+    /* REMOVE FIXED HEIGHTS */
+
+    div[style*="height: 970px"],
+    div[style*="height: 900px"],
+    div[style*="height: 850px"],
+    div[style*="height: 650px"],
+    div[style*="height: 350px"],
+    div[style*="height: 300px"],
+    div[style*="height: 250px"],
+    div[style*="height: 200px"] {
+        height: auto !important;
+        min-height: 0 !important;
+    }
+
+
+    /* MAIN HEADINGS */
+
+    h1 {
+        font-size: 200% !important;
+        line-height: 1.2 !important;
+        text-align: center !important;
+    }
+
+
+    /* LARGE TEXT */
+
+    p[style*="font-size: 600%"],
+    p[style*="font-size: 550%"],
+    p[style*="font-size: 450%"],
+    p[style*="font-size: 300%"],
+    p[style*="font-size: 290%"],
+    p[style*="font-size: 50px"],
+    p[style*="font-size: 45px"] {
+        font-size: 20px !important;
+        line-height: 1.4 !important;
+        text-align: center !important;
+        margin-left: 10px !important;
+        margin-right: 10px !important;
+    }
+
+
+    /* COURSE IMAGES */
+
+    image {
+        display: block !important;
+        max-width: 95% !important;
+        height: auto !important;
+        margin: auto !important;
+    }
+
+
+    /* CLASS AVAILABLE */
+
+    div[style*="margin-left: 940px"],
+    div[style*="margin-left: 900px"] {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+
+    /* TABLES */
+
+    table {
+        width: 95% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: auto !important;
+    }
+
+    td,
+    th {
+        padding: 10px !important;
+        word-wrap: break-word !important;
+    }
+
+
+    /* SHORT TERM COURSES */
+
+    div[style*="width: 85%"] {
+        width: 92% !important;
+        height: auto !important;
+        min-height: 50px !important;
+        padding: 10px 15px !important;
+    }
+
+
+    /* JOB PLACEMENT IMAGE */
+
+    img[src*="job-placement"],
+    image[src*="job-placement"] {
+        max-width: 95% !important;
+        height: auto !important;
+    }
+
+
+    /* GRAY SECTION */
+
+    div[style*="background-color: dimgray"] {
+        height: auto !important;
+        padding-bottom: 30px !important;
+    }
+
+
+    /* ADDRESS SECTION */
+
+    div[style*="width: 25%"] {
+        width: 90% !important;
+        margin: 15px auto !important;
+    }
+
+
+    /* GOOGLE REVIEW */
+
+    div[style*="margin-right: 800px"] {
+        margin-right: 0 !important;
+    }
+
+
+    /* SOCIAL MEDIA */
+
+    div[style*="margin-left: 10px"] {
+        margin-left: 5px !important;
+        overflow-x: auto !important;
+    }
+
+}
+
+
+/* =========================
+   SM
+   576px - 767px
+   ========================= */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    h1 {
+        font-size: 250% !important;
+    }
+
+    div[style*="display: flex"] {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        height: auto !important;
+    }
+
+    div[style*="display: flex"] > div {
+        margin-left: 15px !important;
+        margin-right: 15px !important;
+        max-width: 45% !important;
+    }
+
+    div[style*="margin-left: 650px"],
+    div[style*="margin-left: 630px"],
+    div[style*="margin-left: 550px"],
+    div[style*="margin-left: 535px"],
+    div[style*="margin-left: 455px"],
+    div[style*="margin-left: 435px"],
+    div[style*="margin-left: 430px"],
+    div[style*="margin-left: 410px"],
+    div[style*="margin-left: 380px"] {
+        margin-left: 30px !important;
+    }
+
+    div[style*="margin-left: 300px"] {
+        margin-left: 20px !important;
+    }
+
+    div[style*="height: 970px"],
+    div[style*="height: 900px"],
+    div[style*="height: 850px"] {
+        height: auto !important;
+    }
+
+    table {
+        width: 90% !important;
+    }
+
+    div[style*="width: 25%"] {
+        width: 42% !important;
+        margin: 15px auto !important;
+    }
+}
+
+
+/* =========================
+   MD
+   768px - 991px
+   ========================= */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    h1 {
+        font-size: 320% !important;
+    }
+
+    div[style*="display: flex"] {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        height: auto !important;
+    }
+
+    div[style*="display: flex"] > div {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+    }
+
+    div[style*="margin-left: 650px"],
+    div[style*="margin-left: 630px"] {
+        margin-left: 100px !important;
+    }
+
+    div[style*="margin-left: 550px"],
+    div[style*="margin-left: 535px"],
+    div[style*="margin-left: 455px"],
+    div[style*="margin-left: 435px"],
+    div[style*="margin-left: 430px"],
+    div[style*="margin-left: 410px"],
+    div[style*="margin-left: 380px"] {
+        margin-left: 60px !important;
+    }
+
+    div[style*="margin-left: 300px"] {
+        margin-left: 40px !important;
+    }
+
+    div[style*="height: 970px"],
+    div[style*="height: 900px"],
+    div[style*="height: 850px"] {
+        height: auto !important;
+    }
+
+    table {
+        width: 85% !important;
+    }
+}
+
+
+/* =========================
+   LG
+   992px - 1199px
+   ========================= */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+    h1 {
+        font-size: 400% !important;
+    }
+
+    div[style*="margin-left: 650px"] {
+        margin-left: 250px !important;
+    }
+
+    div[style*="margin-left: 630px"] {
+        margin-left: 230px !important;
+    }
+
+    div[style*="margin-left: 550px"],
+    div[style*="margin-left: 535px"],
+    div[style*="margin-left: 455px"],
+    div[style*="margin-left: 435px"],
+    div[style*="margin-left: 430px"],
+    div[style*="margin-left: 410px"],
+    div[style*="margin-left: 380px"] {
+        margin-left: 100px !important;
+    }
+
+    div[style*="margin-left: 300px"] {
+        margin-left: 50px !important;
+    }
+
+    div[style*="margin-left: 940px"] {
+        margin-left: 300px !important;
+    }
+
+    div[style*="margin-left: 900px"] {
+        margin-left: 280px !important;
+    }
+
+    div[style*="display: flex"] {
+        flex-wrap: wrap !important;
+        height: auto !important;
+    }
+
+    div[style*="height: 970px"],
+    div[style*="height: 900px"],
+    div[style*="height: 850px"] {
+        height: auto !important;
+    }
+
+    div[style*="width: 25%"] {
+        width: 28% !important;
+    }
+}
+
+
+/* =========================
+   XL
+   1200px - 1399px
+   ========================= */
+
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+    div[style*="margin-left: 650px"] {
+        margin-left: 400px !important;
+    }
+
+    div[style*="margin-left: 630px"] {
+        margin-left: 380px !important;
+    }
+
+    div[style*="margin-left: 940px"] {
+        margin-left: 600px !important;
+    }
+
+    div[style*="margin-left: 900px"] {
+        margin-left: 550px !important;
+    }
+
+    div[style*="margin-left: 550px"],
+    div[style*="margin-left: 535px"],
+    div[style*="margin-left: 455px"],
+    div[style*="margin-left: 435px"],
+    div[style*="margin-left: 430px"],
+    div[style*="margin-left: 410px"],
+    div[style*="margin-left: 380px"] {
+        margin-left: 180px !important;
+    }
+
+    div[style*="margin-left: 300px"] {
+        margin-left: 120px !important;
+    }
+
+    div[style*="height: 970px"],
+    div[style*="height: 900px"],
+    div[style*="height: 850px"] {
+        height: auto !important;
+    }
+}
+
+
+/* =========================
+   XXL
+   >= 1400px
+   ========================= */
+
+@media (min-width: 1400px) {
+
+    /*
+       Your original desktop layout
+       is kept here.
+    */
+
+    div[style*="display: flex"] {
+        height: auto !important;
+    }
+
+    image {
+        max-width: 100% !important;
+    }
+}
+
+</style>
+    </style>
+</head>
+<body>
+
+<div>
+
+<body style="margin: 0; padding: 0;">
+
+<div style="background-color: rgb(4, 4, 109); 
+            height: 100px; 
+            width: 100%; 
+            border-top-left-radius: 10px;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            margin: 0;
+            padding: 0;">   
+
+    <ul type="none" style="margin: 0; padding: 0;">
+        
+        <li style="color: white;
+                   float: left;
+                   display: block;
+                   text-align: center;
+                   margin-top: 25px;
+                   font-size: 240%;
+                   font-weight: 1000;
+                   margin-left: 20px;">
+            SINET
+        </li>
+
+        <li style="background-color: red;
+                   color: white;
+                   float: left;
+                   display: block;
+                   padding: 14px 16px;
+                   text-align: center;
+                   margin-left: 650px;
+                   margin-top: 25px;
+                   border-radius: 10px;
+                   font-size: 110%;
+                   font-weight: 1000;">
+            Help Line
+        </li>
+
+        <li style="background-color: green;
+                   color: white;
+                   float: left;
+                   display: block;
+                   padding: 14px 16px;
+                   text-align: center;
+                   margin-left: 630px;
+                   margin-top: 25px;
+                   border-radius: 10px;
+                   font-size: 110%;
+                   font-weight: 1000;">
+            WhatsApp
+        </li>
+
+    </ul>
+</div>
+
+        <br><br><br><br>
+
+        <div style="height: 250px;">
+                <center><h1 style="color: rgb(3, 3, 77);
+                            font-size: 600%;">Welcome to Sinet Education</h1>
+                    
+                <p style="color: rgb(3, 3, 77);
+                   font-size: 300%;">your ISO-certified learning and job training partner with 24
+                   years of expertise.</p></center>
+   
+        </div>
+
+
+        <p align="center" style="color: rgb(3, 3, 77);
+                          font-size: 50px;">Click here to choose your course:</p>
+        <br><br>
+
+
+
+        <div style="display: flex;">
+
+            <div style="margin-left: 300px;">
+                    <image src="sinet-software-courses.webp" ></image>
+            </div>
+
+
+            <div style="margin-left: 550px;">
+                    <image src="sinet-accounting-courses.webp" ></image>
+            </div>
+
+
+        </div>
+        <br>
+
+
+
+        <div style="display: flex;">
+            
+            <div style="margin-left: 300px;">
+                    <image src="sinet-networking-courses.webp" ></image>
+            </div>
+
+
+            <div style="margin-left: 550px;">
+                    <image src="sinet-multimedia-courses.webp" ></image>
+            </div>
+
+
+
+        </div>
+        <br><br>
+
+
+    <div style="background-color: rgb(225, 246, 246); width: 100%; height: 970px;">
+
+        <div style="display: flex; height: 300px;">
+
+                <div style="font-size:550%; height: 100px; width: 100%; padding-top: 80px;">
+                        <center><p>Master the Best<br>
+                            Placement Oriented<br>
+                            Courses from SINET</p></center>
+                </div>
+
+                <div style="margin-left: 50px;">
+                <div style="display: flex; padding-top: 30px;">
+
+                    <div style="margin-right: 180px;">
+
+                        <center><h3>SAP<br>
+                            FI-CO</h3></center>
+                        <button style="height: 50px; text-align: center;
+                                background-color: red; color: yellow;
+                                border-radius: 5px; font-weight: 900;"><p>Brochure</p></button>
+                    </div><br>
+                        
+
+                    <div style="margin-right: 190px; width: 100%; height: 200px;">
+                        <center><h3>PYTHON<br>
+                            FSTACK</h3></center>
+                        <button style="margin-left: 7px;
+                                height: 50px; text-align: center;
+                                background-color: red; color: yellow;
+                                border-radius: 5px; font-weight: 900;"><p>Brochure</p></button>
+                    </div>   
+                        
+                    <div style="margin-right: 150px;">
+                        <center><h3>CCNP<br>
+                            CCNA</h3></center>
+                        <button style="margin-left: 3px;
+                                height: 50px; text-align: center;
+                                background-color: red; color: yellow;
+                                border-radius: 5px; font-weight: 900;"><p>Brochure</p></button>
+                    </div>    
+                        
+                </div>
+        
+
+                
+                <div style="display: flex;">
+
+                        <div>
+                        <center><h3>SAP<br>
+                            MM</h3></center>
+                        <button style="margin-left: 5px;
+                                height: 50px; text-align: center;
+                                background-color: red; color: yellow;
+                                border-radius: 5px; font-weight: 900;"><p>Brochure</p></button>
+
+                        </div><br>
+
+
+                        <div style="margin-left: 180px;">
+
+                        <center><h3>FLUTTER<br>
+                            DART</h3></center>
+                        <button style="margin-left: 10px;
+                                height: 50px; text-align: center;
+                                background-color: red; color: yellow;
+                                border-radius: 5px; font-weight: 900;"><p>Brochure</p></button>
+
+                        </div>
+
+                        <div style="margin-left: 185px;">
+
+                        <center><h3>Azure<br>
+                            ADMIN</h3></center>
+                        <button style="margin-left: 5px;
+                                height: 50px; text-align: center;
+                                background-color: red; color: yellow;
+                                border-radius: 5px; font-weight: 900;"><p>Brochure</p></button>
+
+                        </div>
+
+                </div>
+                </div>
+                
+        </div>      
+        <br><br><br><br><br><br>
+
+
+        <div style="margin-left: 940px; font-size: 50px;">
+            <p style="color: rgb(81, 69, 179);">Class available in any Time!</p>
+        </div><br>
+
+
+        <div style="display: flex; margin-left: 900px;">
+
+            <div style="text-align: center; background-color: white;
+                 border-radius: 10px; height: 350px; font-size: x-large;">
+
+                    <table  cellpadding="0" cellspacing="0" width="300" height="300">
+                        <tr>
+                            <th style="background-color: rgb(2, 2, 78);
+                                       color: white; border-top-left-radius: 10px;
+                                       border-top-right-radius: 10px; height: 50px;">Class Available</th>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 20px;">Online Class <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Offline Class <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Regular Class <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Weekend Class <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Evening & Night Class</td>
+                        </tr>
+                    </table>
+
+
+            </div>
+
+                    
+
+            <div style="margin-left: 30px; text-align: center; background-color: white;
+                 border-radius: 10px; font-size: x-large; height: 350px;">
+
+                    <table cellpadding="0" cellspacing="0" width="300" height="300">
+                        <tr>
+                            <th style="background-color: rgb(2, 2, 78);
+                                       color: white; border-top-left-radius: 10px;
+                                       border-top-right-radius: 10px; height: 50px;">Class Time</th>
+                        </tr>
+                        <tr>
+                            <td style="padding-top: 20px;">Half Day Daily <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Daily 3 Hours <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Daily 1 Hour <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Weekly 5 Hours <hr width="90%"></td>
+                        </tr>
+                        <tr>
+                            <td>Customized</td>
+                        </tr>
+                    </table>
+                
+            </div>
+
+        </div>
+
+    </div> 
+    <br>
+
+
+
+
+        <div>
+                <center><h1 style="color: rgb(81, 69, 179);
+                            font-size: 50px;"><b>Join for Hot Diplomas</b></h1></center>
+
+                <center><p style="color: rgb(81, 69, 179);
+                            font-size: 45px;">"Sinet education Crafted Diploma programs using the best of industry and career-
+                            <br>demanding Tools and Practices"</p></center>
+        </div>
+        <br>
+
+
+
+        <div style="display: flex;">
+
+            <div style="margin-left: 550px; color: rgb(240, 6, 6); font-weight: bolder;
+                 font-size: x-large;">
+                    <h1>DBFM</h1>
+            </div>
+        
+            
+             <div style="margin-left: 430px; color: rgb(240, 6, 6); font-weight: bolder;
+                 font-size: x-large;">
+
+                    <h1>DISE</h1>
+            </div>
+
+        </div>
+
+
+        <div style="display: flex;">
+
+            <div style="margin-left: 535px; color: rgb(81, 69, 179);">
+                    <center><h3>Diploma in Business<br>Finance Management</h3></center>
+                    <center><button style="background-color: red; color: yellow;
+                                    border-radius: 5px; font-weight: 900;">Brochure</button></center>
+            </div>
+        
+            
+             <div style="margin-left: 380px; color: rgb(81, 69, 179);">
+
+                    <center><h3>Diploma in<br>Software Engineering</h3></center>
+                    <center><button style="background-color: red; color: yellow;
+                                    border-radius: 5px; font-weight: 900;">Brochure</button></center>
+            </div>
+
+        </div>
+        <br>
+
+
+
+        <div style="display: flex;">
+
+            <div style="margin-left: 550px; color: rgb(240, 6, 6); font-weight: bolder;
+                 font-size: x-large;">
+                    <h1>DITA</h1>
+            </div>
+        
+            
+             <div style="margin-left: 455px; color: rgb(240, 6, 6); font-weight: bolder;
+                 font-size: x-large;">
+
+                    <h1>DGID</h1>
+            </div>
+
+        </div>
+
+
+        <div style="display: flex;">
+
+            <div style="margin-left: 550px; color: rgb(81, 69, 179);">
+                    <center><h3>Diploma in IT<br>Infrastructure<br>Administration</h3></center>
+                    <center><button style="background-color: red; color: yellow;
+                                    border-radius: 5px; font-weight: 900;">Brochure</button></center>
+            </div>
+        
+            
+             <div style="margin-left: 435px; color: rgb(81, 69, 179);">
+
+                    <center><h3>Diploma in Graphic<br>Illustration<br>Designing</h3></center>
+                    <center><button style="background-color: red; color: yellow;
+                                    border-radius: 5px; font-weight: 900;">Brochure</button></center>
+            </div>
+
+        </div>
+        <br><br><br><br>
+
+
+
+
+
+        <div>
+                <center><h1 style="color: rgb(81, 69, 179);
+                            font-size: 50px;"><b>Hot Trending Courses</b></h1></center>
+                            
+                <center><p  style="color: rgb(81, 69, 179);
+                            font-size: 45px;">"Master the most trending online or offline courses with affordable fees and Job<br>
+                            placements from Sinet!"</p></center>
+        </div>
+        <br>
+
+
+
+
+        <div style="display: flex;">
+
+
+                <div style="margin-left: 550px; color: rgb(240, 6, 6); font-weight: bolder;
+                 font-size: x-large;">
+                        <center><h1>MERN <br>STACK</h1></center>
+                </div>
+
+                <div style="margin-left: 380px; color: rgb(240, 6, 6); font-weight: bolder;
+                 font-size: x-large;">
+                        <center><h1>Python<br>Full Stack</h1></center>
+                </div>
+
+
+        </div>
+
+
+
+        <div style="display: flex;">
+
+                <div style="margin-left: 550px; color: rgb(81, 69, 179);">
+
+                        <center><h3>Mern Stack <br>Development Course</h3></center>
+                        <center><button style="background-color: red; color: yellow;
+                                        border-radius: 5px; font-weight: 900;">Details</button></center>
+
+                </div>
+
+
+                <div style="margin-left: 410px; color: rgb(81, 69, 179);">
+
+                        <center><h3>Python Full Stack<br>Course</h3></center>
+                        <center><button style="background-color: red; color: yellow;
+                                        border-radius: 5px; font-weight: 900;">Details</button></center>
+                    
+                </div>
+
+        </div>
+        <br><br><br><br>
+
+
+
+
+        <div>
+
+                <center><h1 style="color: rgb(81, 69, 179);
+                            font-size: 50px;">Short Term Courses</h1></center>
+                <center><p style="color: rgb(81, 69, 179);
+                            font-size: 50px;">"Select our tailor-made, industry-endorsed crash course programs with <br> Certification."</p></center>
+
+        </div>
+
+
+
+
+        <center><div style="background-color: rgb(25, 25, 124); width: 85%; height: 50px;
+                     color: white; font-size: larger; padding-left: 30px; padding-top: 5px;
+                     padding-bottom: 10px; border-radius: 10px;">
+                <p align="left">Financial Accounting Courses >></p>
+        </div></center><br>
+        
+        
+        <center><div style="background-color: rgb(25, 25, 124); width: 85%; height: 50px;
+                     color: white; font-size: larger; padding-left: 30px; padding-top: 5px;
+                     padding-bottom: 10px; border-radius: 10px;">
+                <p align="left">Software Development Courses >></p>
+        </div></center><br>
+        
+
+        <center><div style="background-color: rgb(25, 25, 124); width: 85%; height: 50px;
+                     color: white; font-size: larger; padding-left: 30px; padding-top: 5px;
+                     padding-bottom: 10px; border-radius: 10px;">
+                <p align="left">Networking Cloud Courses >></p>
+        </div></center><br>
+        
+
+        <center><div style="background-color: rgb(25, 25, 124); width: 85%; height: 50px;
+                     color: white; font-size: larger; padding-left: 30px; padding-top: 5px;
+                     padding-bottom: 10px; border-radius: 10px;">
+                <p align="left">CAD and Multimedia Courses >></p>
+        </div></center>
+        <br><br><br>
+
+
+
+
+        <div>
+                <center><h1 style="color: rgb(81, 69, 179);
+                            font-size: 50px;">JOB PLACEMENTS</h1></center>
+                <center><p style="color: rgb(81, 69, 179);
+                           font-size: 50px;">Click here to see our latest job placements here</p></center>
+        </div>
+
+
+        <div>
+            
+                <center><image src="job-placement-sinet-perinthalmanna.webp"></image></center>
+
+        </div>
+        <br><br><br>
+
+
+
+
+        <div style="background-color: dimgray; width: 100%; height: 900px;"><br><br><br>
+
+            <div style="display: flex;">
+                
+                    <div style="margin-left: 100px;">
+
+                        <image src="Get-Certified.webp"></image>
+                        <p style="margin-left: 80px; color: white; font-size: larger;
+                           font-weight: 300;">Get Certified</p>
+
+                    </div>
+                
+                    <div style="margin-left: 250px;">
+
+                        <image src="Certificate-verification.webp"></image>
+                        <p style="margin-left: 60px; color: white; font-size: larger;
+                           font-weight: 300;">Certificate Verification</p>
+
+                    </div>    
+
+                    <div style="margin-left: 250px;">
+
+                        <image src="sinet-support.webp"></image>
+                        <p style="margin-left: 70px; color: white; font-size: larger;
+                           font-weight: 300;">Free Career Guidance</p>
+
+                    </div>    
+
+            </div>
+                <br><br><br><br>
+
+
+            <div style="display: flex;">
+
+                <div style="margin-left: 100px;">
+
+                    <image src="Global-Winners.webp"></image>  
+                    <p style="margin-left: 80px; color: white; font-size: larger;
+                       font-weight: 300;">Global Winners</p>
+
+                </div>
+
+                
+                <div style="margin-left: 250px;">
+
+                    <image src="Testimonials.webp"></image>
+                    <p style="margin-left: 55px; color: white; font-size: larger;
+                       font-weight: 300;">What our Students Say!</p>
+
+                </div>
+
+                
+                <div style="margin-left: 250px;">
+
+
+                    <image src="sinet-got-awards.webp"></image>
+                    <p style="margin-left: 70px; color: white; font-size: larger;
+                       font-weight: 300;">Press TV @ Awards</p>
+
+                </div>    
+
+            </div>
+
+
+            </div>
+            <br><br>
+
+
+
+
+
+        <div>
+                <image src="python-course-in-sinet-institute.webp" align="right" height="650"></image>
+                <h1 style="color: rgb(66, 66, 205);
+                    font-size: 300%;
+                    font-weight: 600;">SINET <br>
+                    REGIONAL&nbsp; JOB TRAINING&nbsp;INSTITUTE <br>
+                    IN  PERINTHALMANNA&nbsp;  MALAPPURAM</h1>
+                <image src="orange-map-pin.svg"></image>
+                <p style="font-weight: 900; font-size: x-large;">SINET Education</p>
+                <p style="font-size: x-large;">First Floor, City Complex, Near Traffic Junction,<br>
+                   Calicut Road, Perinthalmanna,<br>
+                   Malappuram DT, Kerala, India. Pin 679322</p>
+
+                   <div>
+
+                <p style="font-weight: 100; font-size: larger;">
+
+                    <image src="orange-smartphone.svg" align="left" height="35"></image>8086 800 700</p>
+
+                <p style="font-weight: 100; font-size: larger;">
+
+                    <image src="orange-smartphone.svg" align="left" height="35"></image>7059 800 700</p>
+
+                <p style="font-weight: 100; font-size: larger;">
+
+                    <image src="orange-smartphone.svg" align="left" height="35"></image>9946 668 186</p>
+
+                <p style="font-weight: 100; font-size: larger;">
+
+                    <image src="orange-smartphone.svg" align="left" height="35"></image>04933 227 816</p>
+                
+                    </div>
+
+
+        </div>
+        <br><br><br><br><br><br><br><br>
+
+
+
+
+
+
+        <div>
+
+            <center><image src="sinet-institute-advantages.webp"></image></center>
+
+        </div>
+        <br><br><br>
+
+
+
+        <div>
+
+                <center><h1 style="color: rgb(81, 69, 179);
+                            font-size: 50px;">SINET ADVANTAGES</h1></center>
+                <center><p style="color: rgb(81, 69, 179);
+                            font-size: 25px;">(20 Reasons to Join Sinet Institute.)</p></center>
+
+        </div>
+        <br><br>
+
+
+
+        <div style="font-size: 133%;">
+
+                <center><table width="55%" border="1" cellspacing="0" cellpadding="0" 
+                               style="border-color: rgb(185, 225, 233); border-radius: 5px;">
+
+                        <tr id="jasim" style="height: 50px;">
+
+                            <td style="text-align: center;">
+                                Sinet is an <b>ISO 9001: 2015 Certified</b> educational organization.</td>
+
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet academic team has <b>20+ years of experience</b> in education and training.</td>
+                        </tr>
+
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet is the only <b>WATO Guarantee</b> Offered Institute (Warranty against Technology Obsolescence)</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet courses are <b>highly affordable</b> and gives value for money.</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                24 Hour broadband connection and <b>Wi-Fi enabled campus.</b></td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet has collaborative associations with global education leaders.</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Regional tie-ups with Government agencies for education and training.</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet is a <b>licensed SAP user</b> since 2012.</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet is one of the certification facilitators of <b>global 
+                                certification</b> leaders like Microsoft, Oracle, Redhat, Cisco, SAP, etc</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet offers effective <b>job placement training,</b> self-internship,
+                                experience certificates after job training, and job searching support.</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet provides <b>IEEE project solutions</b> and assistance for engineering students</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet gives <b>educational loans at 0% interest</b></td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet runs <b>"Earn while learn"</b> support program for financially poor students.</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet maintains academically and professionally <b>qualified and experienced faculties.</b></td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td  style="text-align: center;">
+                                Sinet is one of the <b>top-ranked educational brands</b> in India by leading public review companies</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet Education Trained more than <b>10,000+ Students.</b></td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                <b>Internship</b> Facility available for selected Courses</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet Conducts <b>Free Job Placement</b> and Skill enhancement Training.</td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Sinet Education offers <b>Best Alumni services</b></td>
+                        </tr>
+
+                        <tr id="jasim" style="height: 50px;">
+                            <td style="text-align: center;">
+                                Active <b>Job Placement Cell</b> with 100% Assistance up to getting hired.</td>
+                        </tr>
+
+
+
+                </table></center>
+
+        </div>
+        <br><br>
+
+
+
+
+        <div style="margin-left: 30px;">
+
+            <image src="sinet-google-revies.webp"></image>
+
+        </div>
+        <br>
+
+
+        <div>
+
+            <center><p style="margin-right: 800px;
+                       font-size: 290%;
+                       color: rgb(81, 69, 179);">SINET Institute has more than <b>2000 Google <br>Five-Star reviews!</b></p></center>
+
+        </div>
+        <br><br>
+
+
+
+
+        <div style="background-color: gainsboro; height: 850px;">
+
+                <div style="padding-top: 3px;">
+
+                        <center><p style="font-size: 450%;">Contact US!</p></center>
+
+                </div>
+                <br><br>
+
+
+                <div style="display: flex;">
+
+                        <div style="margin-left: 20px; width: 25%;">
+
+                                <image src="orange-map-pin.svg" align="left"><b style="font-size: larger;">&nbsp;Perinthalmanna</b></image>
+                                <p style="font-size: larger;">MALAPPURAM</p>
+                                <br>
+
+                                <p style="font-size: larger;">SINET Education,<br>
+                                   First Floor, City Complex, Near Traffic Junction,<br>
+                                   Calicut Road, Perinthalmanna,<br>
+                                   Malappuram DT, Kerala, India. Pin 679322</p>
+
+                                <p style="font-size: larger;"><image src="orange-smartphone.svg" align="left"></image> 8086 800 700</p>
+                                <p style="font-size: larger;"><image src="orange-smartphone.svg" align="left"></image> 7059 800 700</p>
+                                <p style="font-size: larger;"><image src="orange-smartphone.svg" align="left"></image> 9946 668 186</p>
+                                <p style="font-size: larger;"><image src="orange-smartphone.svg" align="left"></image> 04933 227 816</p><br>
+                                   
+                                <p>info@sinet.in</p>
+                                
+
+
+                        </div>
+
+
+
+                        <div style="margin-left: 230px; width: 25%;">
+
+                                <image src="orange-map-pin.svg" align="left"><b style="font-size: larger;">&nbsp;Manjeri</b></image>
+                                <p style="font-size: larger;">MALAPPURAM</p>
+                                <br>
+
+                                <p style="font-size: larger;">SINET Education,<br>
+                                   2nd Floor, MKM Complex, Above SBI ATM,<br>
+                                   Opp New Bus Stand, Pandikkad Road, Manjeri,<br>
+                                   Malappuram DT, Kerala, India</p>
+
+                               
+                                <p style="font-size: larger;"><image src="orange-smartphone.svg" align="left"></image>8943 800 700 </p>
+                                <p style="font-size: larger;"><image src="orange-smartphone.svg" align="left"></image>9946 668 186</p>
+
+
+                                </p>   
+
+                        </div>
+
+
+                        <div style="margin-left: 150px; margin-top: 40px; width: 25%;">
+                                <p><b style="font-size: larger;">SINET Affiliate Educational Services available:</b></p>
+                                <p style="font-size: larger;">
+                                    <image src="orange-map-pin.svg" align="left"></image>&nbsp;Kuttippuram, Edappal, Valancheri, Malappuram,<br>
+                                                                         Nilambur, Mannarkad, Pattambi, Cherpulassery ,<br>
+                                                                         &nbsp;&nbsp;&nbsp;&nbsp;
+                                                                         &nbsp;Wandoor, Pandikkad, Gudallore</p>
+                            
+                        </div>
+
+
+                </div>
+
+
+            <br>
+            <div style="margin-left: 10px;">
+                <table>
+                    <tr><td>
+                    <image src="SINET_fb.png"></image><span style="font-size: 25px; color: blue;">-</span>
+                    <image src="SINET_LIn.png"></image><span style="font-size: 25px; color: blue;">-</span>
+                    <image src="SINET_Insta.png"></image><span style="font-size: 25px; color: blue;">-</span>
+                    <image src="SINET_Twitter.png"></image><span style="font-size: 25px; color: blue;">-</span>
+                    <image src="SINET_Ytb.png"></image><span style="font-size: 25px; color: blue;">-</span>
+                    <image src="SINET_WhatsApp.png"></image></td></tr>
+                </table>    
+            </div>
+
+
+        </div>
+        <br>
+
+
+</div>  
+</body>
+</html>
