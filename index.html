@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.1">
     <title>Document</title>
     <style>
         #jasim:nth-child(odd){
@@ -10,486 +10,149 @@
         }
 
 
-        <style>
 
-/* =====================================================
-   RESPONSIVE CSS
-   Breakpoints:
-   none : <576px
-   sm   : 576px
-   md   : 768px
-   lg   : 992px
-   xl   : 1200px
-   xxl  : 1400px
-   ===================================================== */
-
-
-/* =========================
-   COMMON
-   ========================= */
-
-* {
-    box-sizing: border-box;
-}
 
 html,
 body {
     width: 100%;
     max-width: 100%;
-    margin: 0;
-    padding: 0;
     overflow-x: hidden;
 }
 
+/* Images */
 img,
 image {
-    max-width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
 }
 
+/* Desktop spacing → responsive */
+@media (max-width: 1199px) {
 
-/* =========================
-   NONE - MOBILE
-   < 576px
-   ========================= */
-
-@media (max-width: 575.98px) {
-
-    /* HEADER */
-
-    body > div > div:first-of-type {
-        position: relative !important;
-        height: auto !important;
-        min-height: 80px !important;
-        padding: 10px !important;
-    }
-
-    body > div > div:first-of-type ul {
-        display: flex !important;
-        align-items: center !important;
-        justify-content: space-between !important;
-        flex-wrap: wrap !important;
-        gap: 8px !important;
-    }
-
-    body > div > div:first-of-type li {
-        float: none !important;
-        margin: 0 !important;
-        font-size: 90% !important;
-        padding: 10px !important;
-    }
-
-    body > div > div:first-of-type li:first-child {
-        font-size: 150% !important;
-    }
-
-
-    /* REMOVE LARGE DESKTOP MARGINS */
-
-    div[style*="margin-left: 650px"],
-    div[style*="margin-left: 630px"],
-    div[style*="margin-left: 550px"],
-    div[style*="margin-left: 535px"],
-    div[style*="margin-left: 455px"],
-    div[style*="margin-left: 435px"],
-    div[style*="margin-left: 430px"],
-    div[style*="margin-left: 410px"],
-    div[style*="margin-left: 380px"],
-    div[style*="margin-left: 300px"],
-    div[style*="margin-left: 250px"],
-    div[style*="margin-left: 230px"],
-    div[style*="margin-left: 185px"],
-    div[style*="margin-left: 180px"],
-    div[style*="margin-left: 150px"],
-    div[style*="margin-left: 100px"],
-    div[style*="margin-left: 50px"],
-    div[style*="margin-left: 30px"],
-    div[style*="margin-left: 20px"] {
+    [style*="margin-left"] {
         margin-left: 0 !important;
     }
 
-
-    /* FLEX ITEMS */
-
-    div[style*="display: flex"] {
-        flex-direction: column !important;
-        align-items: center !important;
-        justify-content: center !important;
-        width: 100% !important;
-        height: auto !important;
-    }
-
-    div[style*="display: flex"] > div {
-        width: 100% !important;
-        max-width: 100% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        padding: 10px !important;
-    }
-
-
-    /* REMOVE FIXED HEIGHTS */
-
-    div[style*="height: 970px"],
-    div[style*="height: 900px"],
-    div[style*="height: 850px"],
-    div[style*="height: 650px"],
-    div[style*="height: 350px"],
-    div[style*="height: 300px"],
-    div[style*="height: 250px"],
-    div[style*="height: 200px"] {
-        height: auto !important;
-        min-height: 0 !important;
-    }
-
-
-    /* MAIN HEADINGS */
-
-    h1 {
-        font-size: 200% !important;
-        line-height: 1.2 !important;
-        text-align: center !important;
-    }
-
-
-    /* LARGE TEXT */
-
-    p[style*="font-size: 600%"],
-    p[style*="font-size: 550%"],
-    p[style*="font-size: 450%"],
-    p[style*="font-size: 300%"],
-    p[style*="font-size: 290%"],
-    p[style*="font-size: 50px"],
-    p[style*="font-size: 45px"] {
-        font-size: 20px !important;
-        line-height: 1.4 !important;
-        text-align: center !important;
-        margin-left: 10px !important;
-        margin-right: 10px !important;
-    }
-
-
-    /* COURSE IMAGES */
-
-    image {
-        display: block !important;
-        max-width: 95% !important;
-        height: auto !important;
-        margin: auto !important;
-    }
-
-
-    /* CLASS AVAILABLE */
-
-    div[style*="margin-left: 940px"],
-    div[style*="margin-left: 900px"] {
-        margin-left: 0 !important;
-        width: 100% !important;
-    }
-
-
-    /* TABLES */
-
-    table {
-        width: 95% !important;
-        max-width: 100% !important;
-        height: auto !important;
-        margin: auto !important;
-    }
-
-    td,
-    th {
-        padding: 10px !important;
-        word-wrap: break-word !important;
-    }
-
-
-    /* SHORT TERM COURSES */
-
-    div[style*="width: 85%"] {
-        width: 92% !important;
-        height: auto !important;
-        min-height: 50px !important;
-        padding: 10px 15px !important;
-    }
-
-
-    /* JOB PLACEMENT IMAGE */
-
-    img[src*="job-placement"],
-    image[src*="job-placement"] {
-        max-width: 95% !important;
-        height: auto !important;
-    }
-
-
-    /* GRAY SECTION */
-
-    div[style*="background-color: dimgray"] {
-        height: auto !important;
-        padding-bottom: 30px !important;
-    }
-
-
-    /* ADDRESS SECTION */
-
-    div[style*="width: 25%"] {
-        width: 90% !important;
-        margin: 15px auto !important;
-    }
-
-
-    /* GOOGLE REVIEW */
-
-    div[style*="margin-right: 800px"] {
+    [style*="margin-right"] {
         margin-right: 0 !important;
     }
 
-
-    /* SOCIAL MEDIA */
-
-    div[style*="margin-left: 10px"] {
-        margin-left: 5px !important;
-        overflow-x: auto !important;
-    }
-
-}
-
-
-/* =========================
-   SM
-   576px - 767px
-   ========================= */
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-    h1 {
-        font-size: 250% !important;
-    }
-
-    div[style*="display: flex"] {
+    [style*="display: flex"] {
         flex-wrap: wrap !important;
         justify-content: center !important;
-        height: auto !important;
     }
 
-    div[style*="display: flex"] > div {
-        margin-left: 15px !important;
-        margin-right: 15px !important;
-        max-width: 45% !important;
-    }
-
-    div[style*="margin-left: 650px"],
-    div[style*="margin-left: 630px"],
-    div[style*="margin-left: 550px"],
-    div[style*="margin-left: 535px"],
-    div[style*="margin-left: 455px"],
-    div[style*="margin-left: 435px"],
-    div[style*="margin-left: 430px"],
-    div[style*="margin-left: 410px"],
-    div[style*="margin-left: 380px"] {
-        margin-left: 30px !important;
-    }
-
-    div[style*="margin-left: 300px"] {
-        margin-left: 20px !important;
-    }
-
-    div[style*="height: 970px"],
-    div[style*="height: 900px"],
-    div[style*="height: 850px"] {
-        height: auto !important;
-    }
-
-    table {
-        width: 90% !important;
-    }
-
-    div[style*="width: 25%"] {
-        width: 42% !important;
-        margin: 15px auto !important;
-    }
 }
 
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1199px) {
 
-/* =========================
-   MD
-   768px - 991px
-   ========================= */
-
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-    h1 {
-        font-size: 320% !important;
-    }
-
-    div[style*="display: flex"] {
-        flex-wrap: wrap !important;
-        justify-content: center !important;
-        height: auto !important;
-    }
-
-    div[style*="display: flex"] > div {
-        margin-left: 20px !important;
-        margin-right: 20px !important;
-    }
-
-    div[style*="margin-left: 650px"],
-    div[style*="margin-left: 630px"] {
-        margin-left: 100px !important;
-    }
-
-    div[style*="margin-left: 550px"],
-    div[style*="margin-left: 535px"],
-    div[style*="margin-left: 455px"],
-    div[style*="margin-left: 435px"],
-    div[style*="margin-left: 430px"],
-    div[style*="margin-left: 410px"],
-    div[style*="margin-left: 380px"] {
-        margin-left: 60px !important;
-    }
-
-    div[style*="margin-left: 300px"] {
-        margin-left: 40px !important;
-    }
-
-    div[style*="height: 970px"],
-    div[style*="height: 900px"],
-    div[style*="height: 850px"] {
-        height: auto !important;
-    }
-
-    table {
-        width: 85% !important;
-    }
-}
-
-
-/* =========================
-   LG
-   992px - 1199px
-   ========================= */
-
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-    h1 {
+    [style*="font-size: 600%"] {
         font-size: 400% !important;
     }
 
-    div[style*="margin-left: 650px"] {
-        margin-left: 250px !important;
+    [style*="font-size: 550%"] {
+        font-size: 350% !important;
     }
 
-    div[style*="margin-left: 630px"] {
-        margin-left: 230px !important;
+    [style*="font-size: 450%"] {
+        font-size: 300% !important;
     }
 
-    div[style*="margin-left: 550px"],
-    div[style*="margin-left: 535px"],
-    div[style*="margin-left: 455px"],
-    div[style*="margin-left: 435px"],
-    div[style*="margin-left: 430px"],
-    div[style*="margin-left: 410px"],
-    div[style*="margin-left: 380px"] {
-        margin-left: 100px !important;
+    [style*="font-size: 300%"] {
+        font-size: 250% !important;
     }
 
-    div[style*="margin-left: 300px"] {
-        margin-left: 50px !important;
-    }
-
-    div[style*="margin-left: 940px"] {
-        margin-left: 300px !important;
-    }
-
-    div[style*="margin-left: 900px"] {
-        margin-left: 280px !important;
-    }
-
-    div[style*="display: flex"] {
-        flex-wrap: wrap !important;
-        height: auto !important;
-    }
-
-    div[style*="height: 970px"],
-    div[style*="height: 900px"],
-    div[style*="height: 850px"] {
-        height: auto !important;
-    }
-
-    div[style*="width: 25%"] {
-        width: 28% !important;
-    }
 }
 
+/* Mobile */
+@media (max-width: 767px) {
 
-/* =========================
-   XL
-   1200px - 1399px
-   ========================= */
-
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-
-    div[style*="margin-left: 650px"] {
-        margin-left: 400px !important;
+    [style*="margin-left"],
+    [style*="margin-right"] {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 
-    div[style*="margin-left: 630px"] {
-        margin-left: 380px !important;
+    [style*="display: flex"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
     }
 
-    div[style*="margin-left: 940px"] {
-        margin-left: 600px !important;
+    [style*="width: 100%"] {
+        width: 100% !important;
     }
 
-    div[style*="margin-left: 900px"] {
-        margin-left: 550px !important;
-    }
-
-    div[style*="margin-left: 550px"],
-    div[style*="margin-left: 535px"],
-    div[style*="margin-left: 455px"],
-    div[style*="margin-left: 435px"],
-    div[style*="margin-left: 430px"],
-    div[style*="margin-left: 410px"],
-    div[style*="margin-left: 380px"] {
-        margin-left: 180px !important;
-    }
-
-    div[style*="margin-left: 300px"] {
-        margin-left: 120px !important;
-    }
-
-    div[style*="height: 970px"],
-    div[style*="height: 900px"],
-    div[style*="height: 850px"] {
-        height: auto !important;
-    }
-}
-
-
-/* =========================
-   XXL
-   >= 1400px
-   ========================= */
-
-@media (min-width: 1400px) {
-
-    /*
-       Your original desktop layout
-       is kept here.
-    */
-
-    div[style*="display: flex"] {
+    [style*="height: 970px"] {
         height: auto !important;
     }
 
-    image {
+    [style*="font-size: 600%"] {
+        font-size: 220% !important;
+    }
+
+    [style*="font-size: 550%"] {
+        font-size: 210% !important;
+    }
+
+    [style*="font-size: 450%"] {
+        font-size: 200% !important;
+    }
+
+    [style*="font-size: 300%"] {
+        font-size: 180% !important;
+    }
+
+    [style*="font-size: 290%"] {
+        font-size: 180% !important;
+    }
+
+    [style*="font-size: 50px"] {
+        font-size: 30px !important;
+    }
+
+    [style*="font-size: 45px"] {
+        font-size: 27px !important;
+    }
+
+    table {
+        width: 100% !important;
         max-width: 100% !important;
     }
+
 }
 
-</style>
+/* Small mobile */
+@media (max-width: 425px) {
+
+    [style*="font-size: 600%"],
+    [style*="font-size: 550%"],
+    [style*="font-size: 450%"],
+    [style*="font-size: 300%"],
+    [style*="font-size: 290%"] {
+        font-size: 170% !important;
+    }
+
+    [style*="font-size: 50px"] {
+        font-size: 25px !important;
+    }
+
+    [style*="font-size: 45px"] {
+        font-size: 22px !important;
+    }
+
+    button {
+        max-width: 100%;
+    }
+}
+
+
+
+       
+
     </style>
 </head>
 <body>
@@ -527,7 +190,7 @@ image {
                    display: block;
                    padding: 14px 16px;
                    text-align: center;
-                   margin-left: 650px;
+                   margin-left: 550px;
                    margin-top: 25px;
                    border-radius: 10px;
                    font-size: 110%;
@@ -541,7 +204,7 @@ image {
                    display: block;
                    padding: 14px 16px;
                    text-align: center;
-                   margin-left: 630px;
+                   margin-left: 530px;
                    margin-top: 25px;
                    border-radius: 10px;
                    font-size: 110%;
